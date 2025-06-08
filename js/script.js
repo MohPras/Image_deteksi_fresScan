@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
     async function loadRecipeData() {
         try {
             const [data, similarity] = await Promise.all([
-                fetch("/js/data.json").then((res) => res.json()),
-                fetch("/js/top_cosine_similarity.json").then((res) => res.json()),
+                fetch("js/data.json").then((res) => res.json()),
+                fetch("js/top_cosine_similarity.json").then((res) => res.json()),
             ]);
             recipesData = data;
             similarityMatrix = similarity;
