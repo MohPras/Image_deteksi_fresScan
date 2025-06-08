@@ -1,0 +1,125 @@
+/* Definisi warna: Hijau dan Putih */
+:root {
+    --green-primary: #10B981;  /* Hijau Emerald */
+    --green-dark: #059669;    /* Hijau lebih gelap */
+    --white-bg: #F8F8F8;      /* Latar belakang putih gading */
+    --white-card: #FFFFFF;    /* Putih bersih untuk kartu */
+    --text-dark: #1F2937;     /* Teks gelap */
+    --text-light: #4B5563;    /* Teks abu-abu */
+    --green-light: #D1FAE5;   /* green-100 di Tailwind */
+    --green-lighter: #F0FDF4; /* green-50 di Tailwind */
+    --green-border: #A7F3D0;  /* green-200 di Tailwind */
+}
+
+body {
+    background-color: var(--white-bg); /* Latar belakang polos putih gading */
+    color: var(--text-dark);
+    font-family: sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* setting background */
+.no-background-pattern {
+    background-image: none !important;
+    background-color: var(--white-bg) !important;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+.pulse {
+    animation: pulse 2s infinite;
+}
+/* sidebar section */
+.sidebar-collapsed {
+    width: 80px !important;
+}
+.sidebar-collapsed .nav-text {
+    display: none !important;
+}
+.sidebar-collapsed .logo-text {
+    display: none !important;
+}
+.sidebar-expanded {
+    width: 280px !important;
+}
+/* chat section */
+.chatContainer {
+    height: calc(100vh - 180px);
+}
+/* Hapus hexagon-bg atau set ke none */
+.hexagon-bg {
+    background-image: none;
+    background-color: transparent; /* Pastikan tidak ada warna lain */
+}
+.card-tilt:hover {
+    transform: rotate(1deg) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.chat-bubble {
+    border-radius: 1.5rem 1.5rem 1.5rem 0.25rem;
+}
+.user-bubble {
+    border-radius: 1.5rem 1.5rem 0.25rem 1.5rem;
+}
+
+/* Styles spesifik untuk skema warna Hijau & Putih */
+.text-green-800 { color: var(--green-dark); }
+.text-green-600 { color: var(--green-primary); }
+.bg-green-600 { background-color: var(--green-primary); }
+.bg-green-100 { background-color: var(--green-light); }
+.border-green-100 { border-color: var(--green-border); }
+.bg-green-50 { background-color: var(--green-lighter); }
+
+/* Ganti semua referensi biru ke hijau atau abu-abu */
+.text-blue-800, .text-blue-600 { color: var(--green-dark); } /* Menggunakan hijau gelap untuk teks yang sebelumnya biru */
+.bg-blue-600 { background-color: var(--green-primary); } /* Menggunakan hijau primer untuk latar belakang yang sebelumnya biru */
+.bg-blue-100 { background-color: var(--green-light); } /* Menggunakan hijau terang untuk latar belakang yang sebelumnya biru terang */
+.border-blue-100 { border-color: var(--green-border); } /* Menggunakan border hijau untuk yang sebelumnya biru */
+.bg-blue-50 { background-color: var(--green-lighter); } /* Menggunakan hijau sangat terang untuk yang sebelumnya biru sangat terang */
+.border-blue-200 { border-color: var(--green-border); } /* Menyesuaikan border input, dll. */
+.focus\:border-blue-400:focus { border-color: var(--green-primary); } /* Menyesuaikan focus border input */
+
+.bg-white { background-color: var(--white-card); }
+.text-white { color: var(--white-card); }
+.text-gray-700 { color: var(--text-dark); }
+.text-gray-600 { color: var(--text-light); }
+.text-gray-50 { background-color: var(--white-bg); }
+
+/* Untuk gradien, fokus pada hijau */
+.gradient-primary-green {
+    background: linear-gradient(90deg, var(--green-primary), var(--green-dark));
+}
+.gradient-bg-green-to-white {
+    background: linear-gradient(135deg, var(--green-lighter), var(--white-card));
+}
+
+.btn-send {
+    position: fixed;           /* Tempel di layar */
+    bottom: 35px;              /* Jarak dari bawah */
+    right: 20px;               /* Jarak dari kanan */
+    background-color: #16a34a;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;             /* Pastikan tampil di atas elemen lain */
+}
+
+.btn-send:hover {
+    background-color: #15803d;
+}
+
