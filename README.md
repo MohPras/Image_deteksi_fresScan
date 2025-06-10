@@ -94,8 +94,7 @@ Semua kolom ini memiliki tipe data **`object`**, yang mengindikasikan bahwa data
 
 Untuk tugas deteksi kesegaran buah dan sayur, kami merancang dan mengimplementasikan model **Convolutional Neural Network (CNN)** menggunakan API Sekuensial Keras. Model ini dirancang untuk mengklasifikasikan gambar input ke dalam 18 kelas kategori yang berbeda (mengindikasikan berbagai jenis buah/sayur dan status kesegarannya).
 
-```
-python
+```python
 # Lab book name entry
 name = "Model"
 
