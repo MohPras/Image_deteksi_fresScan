@@ -321,7 +321,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 **C. Akses Website Dan Model**
 
-Untuk menguji dan berinteraksi dengan model deteksi gambar dan sistem rekomendasi kami melalui antarmuka web, ikuti langkah-langkah berikut:
+Berikut ini adalah link frontend dari projek ini (https://mohpras.github.io/FreshDetect_page/), dalam link itu sudah bisa untuk melakukan rekomendasi baik resep atau penaganan food waste namunn karena keterbatasan akses hosting jadi untuk model deteksi buah dan sayur segar tidak dapat ter integrasi maka dari itu jika anda ingin menguji dan berinteraksi dengan model deteksi gambar kami melalui antarmuka web, ikuti langkah-langkah berikut:
 
 1.  **Unduh Repositori:**
     Pertama, Anda perlu mengunduh seluruh kode proyek. Anda bisa melakukannya dengan mengunduh repositori GitHub ini sebagai file ZIP atau dengan melakukan *cloning* repositori menggunakan Git.
