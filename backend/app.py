@@ -74,6 +74,6 @@ async def predict_image(file: UploadFile = File(...)):
 
 # === Untuk menjalankan secara lokal ===
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=5000, reload=True)
 
 # uvicorn app:app --reload
