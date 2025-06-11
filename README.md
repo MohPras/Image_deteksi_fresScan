@@ -331,14 +331,18 @@ Berikut ini adalah link frontend dari projek ini (https://mohpras.github.io/Fres
 
 3.  **Instal Dependensi (Opsional untuk Lokal):**
     Jika Anda berencana untuk menjalankan model deteksi gambar dan sistem rekomendasi secara lokal menggunakan FastAPI, buka file `requirements.txt` dan instal semua *library* yang diperlukan menggunakan pip (`pip install -r requirements.txt`). Langkah ini tidak diperlukan jika Anda hanya ingin melihat tampilan web statis tanpa fungsi *backend* yang berjalan secara lokal.
+    
+```
+pip install -r requirements.txt
+```
 
-4.  **Verifikasi Struktur File:**
+5.  **Verifikasi Struktur File:**
     Pastikan Anda tidak mengubah struktur dasar file `index.html` dan `script.js`. Perubahan pada struktur dokumen ini dapat menyebabkan *error* fungsionalitas pada aplikasi web.
 
-5.  **Jalankan Aplikasi Web:**
+6.  **Jalankan Aplikasi Web:**
     Gunakan ekstensi seperti Live Server di Visual Studio Code, atau *web server* lokal lainnya yang Anda miliki, untuk menjalankan file `index.html`.
 
-6.  **Eksplorasi Fitur:**
+7.  **Eksplorasi Fitur:**
     Setelah aplikasi web berjalan, Anda akan otomatis diarahkan ke halaman utama "FreshDetect". Di sana, Anda bisa:
     * Mencoba fitur **deteksi gambar buah dan sayur** untuk mengetahui status kesegarannya.
     * Menjelajahi **sistem rekomendasi resep** kami.
