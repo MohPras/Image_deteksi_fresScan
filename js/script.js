@@ -710,7 +710,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append("file", file);
 
         try {
-            const response = await fetch("http://3.27.244.203:5000/predict", {
+            const response = await fetch("http://localhost:5000/predict", {
                 method: "POST",
                 body: formData
             });
